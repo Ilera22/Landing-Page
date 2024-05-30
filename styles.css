@@ -37,8 +37,9 @@ body {
 }
 
 .hero h1 {
+    max-width: 60%;
     font-size: 36px;
-    margin: 0 0 20px;
+    margin: 0 auto 20px;
 }
 
 .hero p {
@@ -74,26 +75,19 @@ body {
     margin-top: 20px;
 }
 
-.trusted-by,
-.project-management,
-.templates,
-.integration,
-.testimonials,
-.footer {
-    text-align: center;
-}
-
 .sections{
-    margin-bottom: 5%;
+    width: 80%;
+    margin: 0 auto;
+/* Arriba | Derecha | Abajo | Izquierda */
+    margin: 5% auto 5% auto;
 }
 
 .Type1_Container{
     display: flex;
-    width: 80%;
-    margin: 0 auto;
 }
 
 .Type1_img {
+    border-radius: 25px;
     width: 50%;
     overflow: scroll;
 }
@@ -104,11 +98,24 @@ body {
     display: block;
 }
 
+.colorText{
+    color: #6A11CB;
+    font-weight: bold;
+}
+.colorBar{
+    width: 25%;
+    height: 6px;
+    border-radius: 25px;
+    background-color:#6A11CB;
+}
+
+#Txt_adj{
+    display: none;
+    margin-bottom: 10px;
+}
 
 .Type3_Container{
     display: flex;
-    width: 80%;
-    margin: 0 auto;
     justify-content: space-between;
 }
 
@@ -118,6 +125,7 @@ body {
 }
 
 .Type3_img {
+    border-radius: 25px;
     width: 48%;
     overflow: scroll;
 }
@@ -125,63 +133,58 @@ body {
 
 .Type4_Container{
     display: flex;
-    width: 80%;
-    margin: 0 auto;
     margin-bottom: 2%;
     justify-content: space-between;
 }
 
 .Type4_img {
+    border-radius: 15px;
     width: 32%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
+.footer {
+    background-image: url('../Assets/Info_Tallao_fondo.png');  
+    text-align: center;
+    padding: 20px;
+  }
+  
+  iframe {
+    width: 94%;
+    min-width: 300px;
+    margin: 1%;
+    border-radius: 10px;
+  }
 
+  .text-font {
+    color: #6a1b9a;
+    font-weight: bold;
+  }
 
-.feature {
-    display: flex;
-    width: 80%;
-    margin: 0 auto;
-}
+/* Estilos para pantallas de móviles */
+@media only screen and (max-width: 767px) {
+    
+    .sections{
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 8%;
+    }
+    .section_hero{
+        display: block;
+    }
+    .mobile_size{
+        width: 100%;
+    }
+    .Type1_txt {
+        text-align: center;
+    }
 
-.feature_img {
-    width: 50%;
-    overflow: scroll;
-}
+    #Txt_adj{
+        display: inline;
+        background-color: #FFA500;
+    }
 
-.feature_txt {
-    padding: 10px;
-    width: 50%;
-    display: block;
-}
-
-
-
-
-.footer-signup {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
-}
-
-.footer-signup input {
-    padding: 10px;
-    border: none;
-    border-radius: 5px 0 0 5px;
-    width: 300px;
-}
-
-.footer-signup button {
-    padding: 10px 20px;
-    border: none;
-    background: #FFA500;
-    color: #fff;
-    border-radius: 0 5px 5px 0;
-    cursor: pointer;
-}
-
-.footer-links,
-.app-links {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
-}
+    #txt{
+        display: none;
+    }
+  }
