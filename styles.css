@@ -47,28 +47,6 @@ body {
     margin: 0 0 20px;
 }
 
-.signup-form {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
-}
-
-.signup-form input {
-    padding: 10px;
-    border: none;
-    border-radius: 5px 0 0 5px;
-    width: 300px;
-}
-
-.signup-form button {
-    padding: 10px 20px;
-    border: none;
-    background: #FFA500;
-    color: #fff;
-    border-radius: 0 5px 5px 0;
-    cursor: pointer;
-}
-
 .hero-image {
     max-width: 100%;
     height: auto;
@@ -131,6 +109,10 @@ body {
 }
 
 
+#Main_Type4{
+    display: none;
+}
+
 .Type4_Container{
     display: flex;
     margin-bottom: 2%;
@@ -140,8 +122,36 @@ body {
 .Type4_img {
     border-radius: 15px;
     width: 32%;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;   
 }
+
+/*Elemento flotante*/
+.floating-geom {
+    position: absolute;
+    width: 150px; /* Ajusta el tamaño según sea necesario */
+    height: 150px; /* Ajusta el tamaño según sea necesario */
+    background-color: rgba(0, 128, 255, 0.2);
+    border-radius: 25px;
+    top: 80%; /* Ajusta la posición según sea necesario */
+    left: 10%; /* Cambiado de 50% a 25% para moverlo más a la izquierda */
+    transform: translate(-50%, -50%) rotate(90deg); /* Añadir rotación */
+    animation: float 5s ease-in-out infinite;
+    z-index: 0; /* Asegura que el objeto esté detrás del texto */
+    filter: blur(5px); /* Añadir desenfoque */
+}
+
+@keyframes float {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg) translateY(0);
+    }
+    50% {
+        transform: translate(-50%, -50%) rotate(180deg) translateY(-20px);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg) translateY(0);
+    }
+}
+
 
 .footer {
     background-image: url('../Assets/Info_Tallao_fondo.png');  
