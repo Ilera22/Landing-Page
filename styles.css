@@ -1,3 +1,6 @@
+body, html {
+    scroll-behavior: smooth; /* Añade esta línea para un desplazamiento suave */
+}
 body {
     font-family: Arial, sans-serif;
     margin: 0;
