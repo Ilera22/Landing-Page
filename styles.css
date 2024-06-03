@@ -98,16 +98,29 @@ body {
     margin-bottom: 10px;
 }
 
+
+#wave-top{
+    margin-top: -70px;
+}
+
 #Main_Type3 {
-    border-radius: 25px;
-    background-color: #6b11cb63 ;
+    background-image: url('./Assets/Info_Tallao_fondo.png');
+    width: 100%;
+    padding-top: 5%;
+
 }
 
 .Type3_Container {
-    display: flex;
     justify-content: space-between;
-    padding: 50px;
-
+    width: 70%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 25px;
+    backdrop-filter: blur(5px);
+    background-color: #ffffff5b;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .Type3_txt {
@@ -120,6 +133,17 @@ body {
     border-radius: 25px;
     width: 48%;
     overflow: scroll;
+}
+
+.Type3_img_Container {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 25px;
+    padding-bottom: 5%;
+}
+
+#wave-bottom{
+    margin-bottom: -5px;
 }
 
 #Main_Type4 {
