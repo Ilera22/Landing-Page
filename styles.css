@@ -1,6 +1,7 @@
 body, html {
     scroll-behavior: smooth; /* Añade esta línea para un desplazamiento suave */
 }
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -56,14 +57,14 @@ body {
     margin-top: 20px;
 }
 
-.sections{
+.sections {
     width: 80%;
     margin: 0 auto;
-/* Arriba | Derecha | Abajo | Izquierda */
     margin: 5% auto 5% auto;
 }
 
-.Type1_Container{
+.Type1_Container {
+    position: relative; /* Asegura que los elementos hijos absolutos se posicionen relativos a este contenedor */
     display: flex;
 }
 
@@ -77,30 +78,40 @@ body {
     padding: 10px;
     width: 50%;
     display: block;
+    z-index: 1; /* Asegura que el texto esté por encima del elemento flotante */
 }
 
-.colorText{
+.colorText {
     color: #6A11CB;
     font-weight: bold;
 }
-.colorBar{
+
+.colorBar {
     width: 25%;
     height: 6px;
     border-radius: 25px;
-    background-color:#6A11CB;
+    background-color: #6A11CB;
 }
 
-#Txt_adj{
+#Txt_adj {
     display: none;
     margin-bottom: 10px;
 }
 
-.Type3_Container{
+#Main_Type3 {
+    border-radius: 25px;
+    background-color: #6b11cb63 ;
+}
+
+.Type3_Container {
     display: flex;
     justify-content: space-between;
+    padding: 50px;
+
 }
 
 .Type3_txt {
+    padding-top: 2%;
     width: 100%;
     text-align: center;
 }
@@ -111,12 +122,11 @@ body {
     overflow: scroll;
 }
 
-
-#Main_Type4{
+#Main_Type4 {
     display: none;
 }
 
-.Type4_Container{
+.Type4_Container {
     display: flex;
     margin-bottom: 2%;
     justify-content: space-between;
@@ -125,22 +135,22 @@ body {
 .Type4_img {
     border-radius: 15px;
     width: 32%;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;   
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-/*Elemento flotante*/
+/* Elemento flotante */
 .floating-geom {
     position: absolute;
-    width: 150px; /* Ajusta el tamaño según sea necesario */
-    height: 150px; /* Ajusta el tamaño según sea necesario */
+    width: 150px;
+    height: 150px;
     background-color: rgba(0, 128, 255, 0.2);
     border-radius: 25px;
-    top: 80%; /* Ajusta la posición según sea necesario */
-    left: 10%; /* Cambiado de 50% a 25% para moverlo más a la izquierda */
-    transform: translate(-50%, -50%) rotate(90deg); /* Añadir rotación */
-    animation: float 5s ease-in-out infinite;
+    top: 30%; /* Ajusta la posición según sea necesario */
+    left: 0%; /* Ajusta la posición según sea necesario */
+    transform: translate(-50%, -50%) rotate(90deg);
     z-index: 0; /* Asegura que el objeto esté detrás del texto */
-    filter: blur(5px); /* Añadir desenfoque */
+    filter: blur(5px);
+    animation: float 5s ease-in-out infinite;
 }
 
 @keyframes float {
@@ -155,49 +165,54 @@ body {
     }
 }
 
-
 .footer {
-    background-image: url('../Assets/Info_Tallao_fondo.png');  
+    background-image: url('./Assets/Info_Tallao_fondo.png');
     text-align: center;
     padding: 20px;
-  }
-  
-  iframe {
+}
+
+iframe {
     width: 94%;
     min-width: 300px;
     margin: 1%;
     border-radius: 10px;
-  }
+}
 
-  .text-font {
+.text-font {
     color: #6a1b9a;
     font-weight: bold;
-  }
+}
 
 /* Estilos para pantallas de móviles */
 @media only screen and (max-width: 767px) {
-    
-    .sections{
+    .sections {
         width: 90%;
         margin: 0 auto;
         margin-bottom: 8%;
     }
-    .section_hero{
+
+    .section_hero {
         display: block;
     }
-    .mobile_size{
+
+    .mobile_size {
         width: 100%;
     }
+
     .Type1_txt {
         text-align: center;
     }
 
-    #Txt_adj{
+    #Txt_adj {
         display: inline;
         background-color: #FFA500;
     }
 
-    #txt{
+    #txt {
         display: none;
     }
-  }
+
+    .floating-geom {
+        visibility: hidden;
+    }
+}

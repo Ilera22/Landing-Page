@@ -3,21 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
+    <title>Tallao</title>
+    <link rel="icon" href="./Assets/website_icon.png" type="image/png">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header class="header">
         <nav class="navbar">
-            <div class="logo">Logo</div>
+            <img src="./Assets/website_icon.png" alt="Tallao" class="logo" height="40">
             <button class="sign-up">Sign Up</button>
         </nav>
         <div class="hero">
             <h1>Convierte tu arte en productos únicos y gestionamos la venta por ti</h1>
             <p>Track, collaborate, and deliver your work all in one place.</p>
-                <a href="#form-section">
-                    <button class="sign-up">Ayudanos</button>
-                </a>
+            <button class="sign-up">Get Started</button>
         </div>
     </header>
 
@@ -30,31 +29,11 @@
                 <div class="colorBar"></div>
             </div>
             <img class="Type1_img mobile_size" src="./Assets/Que_es_Tallao.png" alt="Que es Tallao">
+            <!-- Aquí añade el elemento flotante -->
+            <div class="floating-geom"></div>
         </div>
     </section>
     
-    <section class="sections" id="Main_Type1">
-        <div class="Type1_Container section_hero">
-            <div id="Txt_adj">
-            <p class="colorText">Copyright text</p>
-            <h3>Build the perfect workflow for every project.</h3>
-            <p>Customize your workflow to match the needs of your team.</p>
-            <div class="colorBar"></div>
-           </div>
-            <img class="Type1_img mobile_size" src="./Assets/Como_Funciona.png" alt="Como Funciona">
-            <div class="Type1_txt mobile_size" id="txt">
-                <p class="colorText">Copyright text</p>
-                <h3>Build the perfect workflow for every project.</h3>
-                <p>Customize your workflow to match the needs of your team.</p>
-                <div class="colorBar"></div>
-            </div>
-        </div>
-        
-        <!-- Aquí añade el elemento flotante -->
-        <div class="floating-geom"></div>
-
-    </section>
-
     <section class="sections" id="Main_Type3">
         <div class="Type3_txt">
             <h3>Build the perfect workflow for every project.</h3>
@@ -65,9 +44,26 @@
             <img class="Type3_img" src="./Assets/Tu_parte.png" alt="Feature Image">
         </div>
     </section>
+    
+    <section class="sections" id="Main_Type1">
+        <div class="Type1_Container section_hero">
+            <div id="Txt_adj">
+                <p class="colorText">Copyright text</p>
+                <h3>Build the perfect workflow for every project.</h3>
+                <p>Customize your workflow to match the needs of your team.</p>
+                <div class="colorBar"></div>
+           </div>
+            <img class="Type1_img mobile_size" src="./Assets/Como_Funciona.png" alt="Como Funciona">
+            <div class="Type1_txt mobile_size" id="txt">
+                <p class="colorText">Copyright text</p>
+                <h3>Build the perfect workflow for every project.</h3>
+                <p>Customize your workflow to match the needs of your team.</p>
+                <div class="colorBar"></div>
+            </div>
+        </div>
+    </section>
 
 
-        <!-- Elimina esta parte innecesaria -->
     <section class="sections" id="Main_Type4">
         <div class="Type4_Container">
             <img class="Type4_img" src="./Assets/Placeholder.jpg" alt="Feature Image">
@@ -83,7 +79,7 @@
 
     <div class="footer" id="form-section">
         <p class="text-font">Siguenos en</p>
-        <p class="text-font">Contact: @tallao_latam</p>
+        <p class="text-font">@tallao_latam</p>
         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdr7g4U_gyKAuYdZyi_AMR39QH2prmyfibuq-pIPb22g4GYCA/viewform?embedded=true" width="640" height="480" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
     </div>
 </body>
