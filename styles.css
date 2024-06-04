@@ -223,6 +223,11 @@ iframe {
 
 /* Estilos para pantallas de móviles */
 @media only screen and (max-width: 767px) {
+
+    .hero h1 {
+        max-width: 100%;
+    }
+
     .sections {
         width: 90%;
         margin: 0 auto;
@@ -253,4 +258,5 @@ iframe {
     .floating-geom {
         visibility: hidden;
     }
+
 }
