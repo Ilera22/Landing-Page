@@ -107,14 +107,12 @@ body {
 
 
 #wave-top{
-    margin-top: -6%;
+    margin-top: -1%;
 }
 
 #Main_Type3 {
     background-image: url('./Assets/Info_Tallao_fondo.png');
     width: 100%;
-    padding-top: 5%;
-
 }
 
 .Type3_Container {
