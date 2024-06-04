@@ -200,6 +200,9 @@ footer {
 
 }
 
+
+
+
 .footer {
     text-align: center;
     padding: 1px;
@@ -257,5 +260,8 @@ iframe {
     .floating-geom {
         visibility: hidden;
     }
-
+    
+    #como-funciona-img {
+        margin-top: 10px;
+    }
 }
